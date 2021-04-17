@@ -1,0 +1,51 @@
+:root {
+  --dark_cyan: #2BB3B1;
+  --cyan: #4ABEBD;
+  --background_gray: hsl(204, 43%, 93%);
+  --yellow: #BFDF32;
+  --blue: hsl(218, 22%, 67%);
+  --white: #fff;
+}
+
+body {
+  background-color: var(--background_gray);
+  font-family: 'karla', sans-serif;
+}
+
+.main {
+  display: grid;
+}
+
+.box {
+  padding: 20px;
+}
+
+.box_white {
+  background-color: var(--white);
+}
+
+.box_title_dark {
+  color: var(--dark_cyan);
+}
+
+.box_subtitle {
+  color: var(--yellow);
+}
+
+.box_text_blue {
+  color: var(--blue);
+}
+
+.box_dark_cyan {
+  background-color: var(--dark_cyan);
+  color: var(--white);
+}
+
+.box_button {
+  color: var(--white);
+}
+
+.box_cyan {
+  background-color: var(--cyan);
+  color: var(--white);
+}
