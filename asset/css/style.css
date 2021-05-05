@@ -5,11 +5,14 @@
   --yellow: #BFDF32;
   --blue: hsl(218, 22%, 67%);
   --white: #fff;
+  --perMonth: #76d4d4;
 }
 
 body {
   background-color: var(--background_gray);
   font-family: 'karla', sans-serif;
+  font-size: 16px;
+  padding: 50px 22px;
 }
 
 .main {
@@ -20,20 +23,31 @@ body {
   padding: 20px;
 }
 
+.box:first-of-type {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.box:last-of-type {
+  border-radius: 0px 0px 10px 10px;
+}
+
 .box_white {
   background-color: var(--white);
 }
 
 .box_title_dark {
   color: var(--dark_cyan);
+  font-weight: 700;
 }
 
 .box_subtitle {
   color: var(--yellow);
+  font-weight: bold;
 }
 
 .box_text_blue {
   color: var(--blue);
+  line-height: 2;
 }
 
 .box_dark_cyan {
@@ -41,11 +55,54 @@ body {
   color: var(--white);
 }
 
+.box_price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.box_currency {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.box_currency_small {
+  font-size: 1rem;
+}
+
+.box_currency::before {
+  content: ' $';
+}
+
+.box_periodicity {
+  margin-left:  8px;
+  color: var(--perMonth);
+}
+
+.box_text {
+  margin-bottom: 20px;
+}
+
 .box_button {
+  display: block;
+  background-color: var(--yellow);
+  text-decoration: none;
+  width: 100%;
+  padding: 14px 0;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   color: var(--white);
+  font-size: 18px;
 }
 
 .box_cyan {
   background-color: var(--cyan);
   color: var(--white);
+}
+
+.list {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
 }
